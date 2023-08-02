@@ -7,7 +7,7 @@ body {
 
     overflow: hidden; /* Hide scrollbars */
 
-    min-height: 100vw;;
+    min-height: 100vh; 
 }
 
 .main {
@@ -25,4 +25,12 @@ body {
 .main .content {
     width: 60vw;
     background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.main .content h1 {
+    font-size: 1.5rem;
 }
