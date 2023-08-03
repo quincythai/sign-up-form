@@ -1,5 +1,6 @@
 :root {
     --light-gray: #D3D3D3;
+    --border-color: #D6D9DC;
 }
 
 body {
@@ -44,6 +45,7 @@ body {
 .main .middle-container {
     background-color: white;
     padding: 0 40px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .middle-container form {
@@ -51,6 +53,8 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 80%;
+    padding-bottom: 40px;
 }
 
 form .input-container {
@@ -58,8 +62,16 @@ form .input-container {
     flex-direction: column;
     justify-content: flex-start;
     width: 40%;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 0.7em;
 }
 
 form .input-container input {
     width: 100%;
+    padding: 3px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 4px;
 }
