@@ -1,8 +1,11 @@
 :root {
-    --light-gray: #D3D3D3;
+    --light-gray: #d5d1ce;
     --dark-gray: #5D5D5D;    
     --border-color: #D6D9DC;
     --button-color: #596D48;
+    --logo-color: #f4f4f4;
+    --coffee: #a18c7f;
+    --beige: #b3ada9;
 }
 
 body {
@@ -17,15 +20,36 @@ body {
     display: flex;
 }
 
-.main .sidebar {
+.sidebar {
     width: 40vw;
     height: 100vh;
     background-image: url("images/image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 
-.main .content {
+.sidebar img {
+    width: 50%;
+    height: auto;
+}
+
+.sidebar .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: var(--logo-color);
+    padding-top: 20px;
+    opacity: 80%;
+    width: 100%;
+    color: black;
+    font-weight: 800;
+    font-size: 3em;
+    top: 20%;
+}
+
+.content {
     width: 60vw;
     background-color: var(--light-gray);
     display: flex;
@@ -33,18 +57,17 @@ body {
     justify-content: center;
 }
 
-.main .content h1 {
+.content h1 {
     font-size: 1.5rem;
 }
 
-.main .top-container {
-    background-color: var(--light-gray); 
+.top-container { 
     padding: 0 40px 40px 40px;
     display: flex; 
     flex-direction: column;
 }
 
-.main .middle-container {
+.middle-container {
     background-color: white;
     padding: 0 40px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
