@@ -41,12 +41,26 @@ body {
     position: absolute;
     background-color: var(--logo-color);
     padding-top: 20px;
-    opacity: 80%;
+    opacity: 90%;
     width: 100%;
     color: black;
     font-weight: 800;
     font-size: 3em;
     top: 20%;
+}
+
+.sidebar .photo-credits {
+    position: absolute;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar .photo-credits a {
+    text-decoration: underline;
+    color: white;
 }
 
 .content {
