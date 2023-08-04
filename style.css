@@ -148,6 +148,14 @@ button:active {
 }
 
 /* Form stuff */
+.comment-form-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
 
 #commentform label {
     font-size: 0.8em;
