@@ -6,6 +6,8 @@
     --logo-color: #f4f4f4;
     --coffee: #a18c7f;
     --beige: #b3ada9;
+    --valid: #8bC34a;
+    --invalid: #b92326;
 }
 
 body {
@@ -118,6 +120,7 @@ body {
     border-radius: 3px;
     font-size: 14px;
     margin-top: 4px;
+    transition: border-color 0.3s;
 }
 
 .bottom-container {
@@ -140,4 +143,12 @@ body {
 .bottom-container span {
     font-weight: bold;
     color: var(--button-color);
+}
+
+input[type="text"]:focus {
+    border-color: var(--border-color);
+}
+
+input:focus:-ms-webkit-input {
+    border-color: var(--border-color);
 }
