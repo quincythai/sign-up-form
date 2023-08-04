@@ -52,14 +52,15 @@
                     </div>
                     <div class="comment-form-name">
                         <label for="password">PASSWORD</label>
-                        <input id="password" placeholder="" name="password" type="password" value="" maxlength="50"
+                        <input id="password" placeholder="" name="password" type="password" value="" maxlength="50" onkeyup='check();'
                             required>
                     </div>
                     <div class="comment-form-name">
                         <label for="confirm_password">CONFIRM PASSWORD</label>
                         <input id="confirm_password" placeholder="" name="confirm_password" type="password" value=""
-                            maxlength="50" required>
+                            maxlength="50" onkeyup='check();' required>
                     </div>
+                    <span id='message'></span>
             </div>
             <div class="bottom-container">
                 <button>Create Account</button>
@@ -68,6 +69,7 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
