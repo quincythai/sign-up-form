@@ -30,27 +30,27 @@
                 <form id="commentform" class="comment-form">
                     <div class="comment-form-name">
                         <label for="name">FIRST NAME</label>
-                        <input id="name" placeholder="" name="name" type="text" value="" pattern="^[^0-9]+$"  maxlength="245" required>
+                        <input id="name" placeholder="" name="name" type="text" value="" pattern="^[^0-9]+$"  maxlength="50" title="Please only type alphabet characters" required>
                     </div> 
                     <div class="comment-form-name">
                         <label for="name">LAST NAME</label>
-                        <input id="name" placeholder="" name="name" type="text" value="" pattern="^[^0-9]+$" maxlength="245" required>
+                        <input id="name" placeholder="" name="name" type="text" value="" pattern="^[^0-9]+$" maxlength="50" title="Please only type alphabet characters" required>
                     </div>
                     <div class="comment-form-name">
                         <label for="email">EMAIL</label>
-                        <input id="email" placeholder="" name="email" type="email" value="" maxlength="245" required>
+                        <input id="email" placeholder="example@mail.com" name="email" type="email" value="" maxlength="100" title="Please remember to have an @ and .com" required>
                     </div> 
                     <div class="comment-form-name">
                         <label for="phone_number">PHONE NUMBER</label>
-                        <input id="phone_number" placeholder="" name="phone_number" type="text" value="" maxlength="245" required>
+                        <input id="phone_number" placeholder="XXX-XXX-XXXX" name="phone_number" type="text" value="" pattern="\d{3}-\d{3}-\d{4}" minlength="12" maxlength="12" title="Please enter a 10 digit number in the format of XXX-XXX-XXXX." required>
                     </div> 
                     <div class="comment-form-name">
                         <label for="password">PASSWORD</label>
-                        <input id="password" placeholder="" name="password" type="text" value="" maxlength="245" required>
+                        <input id="password" placeholder="" name="password" type="password" value="" maxlength="50" required>
                     </div> 
                     <div class="comment-form-name">
                         <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input id="confirm_password" placeholder="" name="confirm_password" type="text" value="" maxlength="245" required>
+                        <input id="confirm_password" placeholder="" name="confirm_password" type="password" value="" maxlength="50" required>
                     </div> 
                 </form>
             </div>
